@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import Links from "./Links";
 import GlobalButton from "./GlobalButton";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [showNavLink, setShowNavLink] = useState(false);
@@ -25,11 +26,16 @@ function Navbar() {
           </div>
         </div>
         <Links showLink={showNavLink}>
-          <GlobalButton
-            text="Subscribe"
-            className={"bg-white"}
-            href={"/#footer"}
-          />
+          <Link
+            to="footer"
+            spy={true}
+            smooth={true}
+            offset={100}
+            duration={100}
+            className="bg-white py-[1.6rem] px-[4.8rem] rounded-[.3rem] text-[1.8rem] cursor-pointer text-[#232536] font-bold transition-all"
+          >
+            Subscribe
+          </Link>
         </Links>
       </nav>
     </div>
