@@ -17,8 +17,8 @@ function Testimonials() {
   }, [count]);
 
   return (
-    <div className="bg-[#FBF6EA]  p-12 grid gap-[3rem] lmd:grid-cols-[1.5fr_2fr] lmd:p-[7rem]">
-      <div className="grid justify-items-center text-center border-b-4 pb-[3rem] lmd:block lmd:text-left lmd:pb-0 lmd:border-r-2 lmd:border-b-0 lmd:pr-[3rem]">
+    <div className="bg-[#FBF6EA]  p-12 grid gap-[3rem] lg:grid-cols-[1.5fr_2fr] lg:p-[7rem]">
+      <div className="grid justify-items-center text-center border-b-4 pb-[3rem] lg:block lg:text-left lg:pb-0 lg:border-r-2 lg:border-b-0 lg:pr-[3rem]">
         <h6 className="text-[#232536] text-[1.6rem] font-semibold leading-[2rem] tracking-[.3rem] uppercase">
           TESTIMONIALs
         </h6>
@@ -32,7 +32,7 @@ function Testimonials() {
       </div>
 
       {/* carousel box */}
-      <div className="relative h-[52.6rem] md:h-[33rem] lmd:h-[36.2rem] lg:h-[33rem] flex justify-center items-end overflow-hidden">
+      <div className="relative h-[52.6rem] md:h-[40rem] lmd:h-[45rem] lg:h-[33rem] flex justify-center items-end overflow-hidden">
         {data.map((slide, personIndex) => {
           const { id, img, name, quote, title } = slide;
           return (
@@ -48,7 +48,7 @@ function Testimonials() {
               <p className="max-w-[46.9rem] font-Sen text-[2.4rem] font-bold leading-[3.2rem] text-[#232536]">
                 {quote}
               </p>
-              <div className="lmd:mt-[5rem] relative lmd:self-end mr-[10rem]">
+              <div className="lmd:mt-[5rem] relative lmd:self-end">
                 <div className="flex gap-[1.6rem] items-center">
                   <img
                     src={img}
@@ -68,24 +68,24 @@ function Testimonials() {
             </div>
           );
         })}
-        <div className="flex gap-4 justify-center h-[2.6rem] lmd:absolute lmd:bottom-0 lmd:right-[0rem] lmd:justify-self-end">
+        <div className="flex gap-4 justify-center h-[6rem] lg:absolute lg:bottom-0 lg:right-[0rem] lg:justify-self-end">
           <span
-            className="h-[2.6rem] w-[3rem] flex justify-center items-center"
+            className="h-[5rem] w-[5rem] flex justify-center items-center"
             onClick={() => dispatch(prevSlide())}
           >
             <LeftArrorIcon
               className={
-                "h-[2rem] w-[2rem] bg-white rounded-full p-1 transition-all active:h-[2.5rem] active:w-[2.5rem] hover:text-white hover:bg-[#232536]"
+                "h-full w-full bg-white rounded-full p-5 transition-all active:h-[2.5rem] active:w-[2.5rem] hover:text-white hover:bg-[#232536]"
               }
             />
           </span>
           <span
-            className="h-[2.6rem] w-[3rem] flex justify-center items-center"
+            className="h-[5rem] w-[5rem] flex justify-center items-center"
             onClick={() => dispatch(nextSlide())}
           >
             <RightArrorIcon
               className={
-                "h-[2rem] w-[2rem] bg-white rounded-full p-1 transition-all active:h-[2.5rem] active:w-[2.5rem] hover:text-white hover:bg-[#232536]"
+                "h-full w-full bg-white rounded-full p-5 transition-all active:h-[2.5rem] active:w-[2.5rem] hover:text-white hover:bg-[#232536]"
               }
             />
           </span>

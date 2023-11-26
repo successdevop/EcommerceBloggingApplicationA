@@ -6,7 +6,7 @@ const logoData = [logoA, logoB, logoC, logoD, logoE];
 function FeaturedLogos() {
   return (
     <div className="xlg:flex xlg:gap-12 xlg:items-end justify-center">
-      <div className="text-center mb-12 xlg:mb-0">
+      <div className="text-center mb-20 xlg:mb-0">
         <p className="text-[#6D6E76] text-[1.4rem] leading-[2rem] xlg:text-left">
           We are
         </p>

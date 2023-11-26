@@ -23,7 +23,7 @@ function HomePage() {
 
       {/* featured post section */}
       <section className="max-w-[120rem] mx-auto lg:px-4 lg:flex lg:gap-6">
-        <div className="my-[5rem] lg:mb-[0]">
+        <div className="my-[5rem] lg:mb-[0] px-2">
           <h4 className="mb-[1.5rem] font-bold text-[#232536] text-[2rem] lg:text-[3rem] lg:leading-[4rem] lg:tracking-[-.1rem]">
             Featured Post
           </h4>
@@ -139,7 +139,7 @@ function HomePage() {
       </section>
 
       {/* category section */}
-      <section className="max-w-[120rem] mx-auto px-4">
+      <section className="max-w-[120rem] mt-[10rem] mx-auto px-4">
         <Categories textAlign={"center"} />
       </section>
 
@@ -151,7 +151,7 @@ function HomePage() {
             alt="discoverImg"
             className="block lg:w-[60%]"
           />
-          <div className="pt-8 p-1 bg-[#fff] lg:absolute lg:bottom-0 lg:right-0 lg:p-[4rem] xlg:p-[8rem]">
+          <div className="pt-8 pl-4 bg-[#fff] lg:absolute lg:bottom-0 lg:right-0 lg:p-[4rem] xlg:p-[8rem]">
             <h5 className="text-[#232536] text-[1.6rem] font-semibold leading-[2rem] tracking-[.3rem] uppercase">
               Why we started
             </h5>
