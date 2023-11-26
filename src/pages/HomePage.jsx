@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import featuredImg from "../assets/images/featuredImgs/featureA.svg";
+import featuredImg from "../assets/images/featuredImgs/featureA.jpg";
 import GlobalButton from "../components/GlobalButton";
 import { Link } from "react-router-dom";
 import Categories from "../components/Categories";

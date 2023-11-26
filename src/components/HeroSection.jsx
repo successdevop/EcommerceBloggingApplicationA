@@ -1,5 +1,5 @@
 import { MdArrowRight } from "react-icons/md";
-import BackgroundImage from "../assets/images/bgImgB.png";
+import BackgroundImage from "../assets/images/bgImgB.jpg";
 import GlobalButton from "./GlobalButton";
 import { BLOG } from "../assets/constants/routePaths";
 
