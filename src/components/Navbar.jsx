@@ -28,7 +28,7 @@ function Navbar() {
           <GlobalButton
             text="Subscribe"
             className={"bg-white"}
-            href={"footer"}
+            href={"/#footer"}
           />
         </Links>
       </nav>

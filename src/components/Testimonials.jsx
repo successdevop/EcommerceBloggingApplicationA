@@ -75,7 +75,7 @@ function Testimonials() {
           >
             <LeftArrorIcon
               className={
-                "h-full w-full bg-white rounded-full p-5 transition-all active:h-[2.5rem] active:w-[2.5rem] hover:text-white hover:bg-[#232536]"
+                "h-full w-full bg-white rounded-full p-5 transition-all hover:text-white hover:bg-[#232536]"
               }
             />
           </span>
@@ -85,7 +85,7 @@ function Testimonials() {
           >
             <RightArrorIcon
               className={
-                "h-full w-full bg-white rounded-full p-5 transition-all active:h-[2.5rem] active:w-[2.5rem] hover:text-white hover:bg-[#232536]"
+                "h-full w-full bg-white rounded-full p-5 transition-all hover:text-white hover:bg-[#232536]"
               }
             />
           </span>

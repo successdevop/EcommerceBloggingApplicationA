@@ -192,7 +192,7 @@ function HomePage() {
       </div>
 
       {/* joinOurTeam section */}
-      <div className="my-[10rem]">
+      <div className="my-[10rem] px-[2rem]">
         <JoinOurTeam />
       </div>
     </>

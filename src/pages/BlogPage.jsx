@@ -93,12 +93,12 @@ function BlogPage() {
       </section>
 
       {/* categories */}
-      <div className="max-w-[128rem] mx-auto">
+      <div className="max-w-[128rem] mx-auto px-8">
         <Categories text="All Categories" />
       </div>
 
       {/* join our team */}
-      <div className="max-w-[128rem] mx-auto my-[10rem]">
+      <div className="max-w-[128rem] mx-auto my-[10rem] px-8">
         <JoinOurTeam />
       </div>
     </div>

@@ -48,7 +48,7 @@ const ContactPage = () => {
 
         <form
           action=""
-          className="max-w-[76.8rem] mx-auto mt-[3.2rem] grid gap-[1.6rem]"
+          className="max-w-[76.8rem] mx-auto mt-[3.2rem] grid gap-[1.6rem] px-8"
         >
           <input
             type="text"
