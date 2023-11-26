@@ -61,7 +61,7 @@ function BlogPostPage() {
   return (
     <div>
       {/* top */}
-      <div className="pt-16 pb-[6.4rem] px-4 max-w-[76rem] mx-auto">
+      <div className="pt-16 pb-[6.4rem] px-8 md:px-16 max-w-[76rem] mx-auto">
         <div className="flex gap-4 items-center">
           <img
             src={author?.authorImage}
@@ -92,7 +92,7 @@ function BlogPostPage() {
         </div>
       </div>
       {/* button */}
-      <div className="max-w-[128rem] mx-auto mb-16">
+      <div className="max-w-[128rem] mx-auto mb-16 px-8 md:px-16">
         <GlobalButton
           text="Go Back"
           className={"bg-[#FFD050]"}
@@ -107,7 +107,7 @@ function BlogPostPage() {
           alt="f"
           className="w-full max-h-[50rem] object-cover"
         />
-        <div>
+        <div className="px-8 md:px-16">
           <div className="max-w-[80rem] mx-auto mt-[6rem]">
             <h2 className="mb-[1.6rem] text-[#232536] font-Sen text-[3.6rem] font-bold leading-[4.8rem] tracking-[-.2rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -189,11 +189,11 @@ function BlogPostPage() {
       </div>
 
       {/* what to read next */}
-      <div className="mt-[10rem] max-w-[120rem] mx-auto">
+      <div className="mt-[10rem] max-w-[120rem] mx-auto px-12">
         <h2 className="text-[#000] font-Sen text-[3.6rem] font-bold leading-[4.8rem] tracking-[-.2rem]">
           What to read next
         </h2>
-        <div className="mt-[5rem] px-4 border-b-2 pb-[2rem] flex flex-col lg:gap-[4rem]">
+        <div className="mt-[2rem] border-b-2 pb-[2rem] flex flex-col gap-[4rem]">
           {dataBase.posts.slice(15, 18).map((post) => (
             <Link
               key={post.postId}
@@ -224,7 +224,7 @@ function BlogPostPage() {
       </div>
 
       {/* join our team */}
-      <div className="my-[10rem]">
+      <div className="my-[10rem] px-8">
         <JoinOurTeam />
       </div>
     </div>
