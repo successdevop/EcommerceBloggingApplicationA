@@ -42,14 +42,15 @@ function CategoryPage() {
         </div>
       </div>
       {/* navigate */}
-      <div className="max-w-[120rem] mx-auto mt-16">
+      <div className="max-w-[120rem] mx-auto mt-16 px-8 md:px-16">
         <GlobalButton
+          paddingLR={1.5}
           text="Go Back"
           className={"bg-[#FFD050] inline-flex"}
           onclick={() => navigate(-1)}
         />
       </div>
-      <div className="max-w-[120rem] mx-auto mt-[6rem] xlg:grid xlg:grid-cols-[4fr_1fr] xlg:gap-8">
+      <div className="max-w-[120rem] mx-auto mt-[6rem] px-8 md:px-16 xlg:grid xlg:grid-cols-[4fr_1fr] xlg:gap-8">
         <div className="p-[1rem]">
           <div className="grid gap-16 lg:gap-[5rem]">
             {sortedArr
@@ -82,11 +83,11 @@ function CategoryPage() {
             </span>
           </div>
         </div>
-        <div>
-          <div className="px-[1rem] text-[#232536] font-Sen text-[3.6rem] font-bold leading-[4.8rem] tracking-[-.2rem] mt-4 xlg:mt-0">
+        <div className="mt-[5rem]">
+          <div className="text-[#232536] font-Sen text-[3.6rem] font-bold leading-[4.8rem] tracking-[-.2rem] mt-4 xlg:mt-0">
             Categories
           </div>
-          <div className="grid gap-8 grid-cols-2 mt-[2rem] px-[1rem] xlg:grid-cols-1 xlg:self-start">
+          <div className="grid gap-8 grid-cols-2 mt-[2rem] xlg:grid-cols-1 xlg:self-start">
             {categoryData.map((category) => (
               <Link
                 key={category.postCategory}

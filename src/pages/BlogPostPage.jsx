@@ -92,10 +92,10 @@ function BlogPostPage() {
         </div>
       </div>
       {/* button */}
-      <div className="max-w-[128rem] mx-auto mb-16 px-8 md:px-16">
+      <div className="max-w-[128rem] mx-auto my-16 px-8 md:px-16">
         <GlobalButton
           text="Go Back"
-          className={"bg-[#FFD050]"}
+          className={"bg-[#FFD050] inline-flex"}
           onclick={() => navigate(-1)}
         />
       </div>
