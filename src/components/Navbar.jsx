@@ -3,7 +3,6 @@ import { IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import Links from "./Links";
-import GlobalButton from "./GlobalButton";
 import { Link } from "react-scroll";
 
 function Navbar() {
